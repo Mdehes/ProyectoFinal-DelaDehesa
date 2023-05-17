@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simulador de Tienda de Objetos MMORPG "Tienda de las Rarezas"</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <style>
+        /*Configuracion del modo nocturno*/
+        .dark {
+            background-color: #151515;
+            color: #fff;
+        }
+        .dark button {
+            background-color: #413F42;
+            color: #fff;
+        }
+        .dark button:hover {
+            background-color: #D6D5A8;
+            color: #151515;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+    </header>
+    <main id="main">
+        <h3 id="titulo"></h3>
+        <div id="contenedorLogin">
+            <p id="bienvenidaUsuario"></p>
+            <form id="formulario" onsubmit="guardarNombre(event)">
+                <input id="inputNombre" name="nombre" type="text" id="nombreUsuario" placeholder="Nombre de usuario"
+                    required />
+                <button type="submit">Guardar</button>
+            </form>
+            <button id="btnBorrarLocalStorage" onclick="borrarLocalStorage()">Borrar Local Storage</button>
+        </div>
+        <div id="contenedorDatos">Datos del usuario</div>
+        <div id="contenedorEstadisticas">Estadisticas del usuario</div>
+        <div id="contenedorObjetosEquipados">Objetos del usuario</div>
+        <div id="contenedorInventario">Inventario</div>
+        <button id="borrarInventario" onclick="borrarInventario()"> Borrar inventario</button>
+        <div id="contenedorObjetos">Objetos de la Tienda</div>
+        <button id="btnfondo">Dark/Light</button>
+    </main>
+    <footer>
+        <p>Derechos reservados &copy; 2023 Tienda de las Rarezas</p>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
