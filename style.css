@@ -2,56 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: black;
+    color: #fff;
+    list-style-type: none;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 1.5;
     overflow-x: hidden;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    background-color: #576CBC;
-    color: #1b1b1b;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-}
-
-nav ul li a:hover {
-    background-color: #1b1b1b;
-    color: #fff;
 }
 
 main {
@@ -63,141 +23,155 @@ main {
 }
 
 section {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-li {
-    background-color: #333;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 0.25rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    max-width: 350px;
+}
+section > div {
+    margin-left: 10px;
 }
 
-li h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+#userDataContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 272px;
+    max-width: 350px;
+}
+#userDataContainer > div {
+    font-size: 13px;
+    flex: 0 0 px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+#userIcon{
+    align-self: center;
+    width: 70px;
 }
 
-li img {
-    max-width: 100%;
-    margin-bottom: 1rem;
+.welcomeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+.welcomeContainer img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
 }
 
-li p {
-    margin-bottom: 1rem;
-    text-align: justify;
-    font-size: 0.9rem;
+#inventoryContainer {
+    font-size: 13px;
+    flex: 0 0 opx;
+    margin: 10px;
+    padding: 10px;
+    max-width: 95px;
+    height: 272px;
+    border: 1px solid #ccc;
+}
+#inventoryIcon {
+    margin-left: 10px;
+    border: 1px solid white;
+    width: 30px;
+}
+#inventoryIcon:hover{
+    border-color: #d6d5a8; /* Cambia el color de fondo cuando el cursor está sobre el botón */
 }
 
-.price {
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+#equippedObjectContainer {
+    font-size: 13px;
+    flex: 0 0 opx;
+    margin: 10px;
+    padding: 10px;
+    max-width: 95px;
+    height: 272px;
+    border: 1px solid #ccc;
+}
+#equippedObjectsIcon {
+    margin-left: 10px;
+    border: 1px solid white;
+    width: 30px;
 }
 
+#objectsContainer {
+    display: flex;
+    font-size: 13px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;;
+}
+#objectsContainer > div {
+    flex: 0 0 opx;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 95px;
+}
+.objectIcon {
+    width: 50px;
+}
+
+#buttonsContainter{
+    max-width: 90px;
+}
 button {
-    background-color: #D6D5A8;
-    color: #151515;
+    color: black;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 1rem;
+}
+#addButton{
+    margin-bottom: 10px;
+    font-size: 10px;
+    background-color: white;
+    width: 75px;
+}
+#addButton:hover {
+    background-color: #d6d5a8; 
+}
+#resetStoreButton {
+    margin-bottom: 10px;
+    font-size: 8px;
+    background-color: white;
+    width: 60px;
+}
+#resetStoreButton:hover {
+    background-color: #d6d5a8; 
+}
+#getRandomQuoteButton{
+    font-size: 8px;
+    background-color: white;
+    width: 60px;
+}
+#getRandomQuoteButton:hover {
+    background-color: #d6d5a8; 
 }
 
-#btnBorrarLocalStorage {
-    background-color: #FF7B54;
-    color: #151515;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1rem;
+#equipMessage {
+    font-size: 10px;
+    width: 20px;
+    height: 10px;
 }
-#btnBorrarLocalStorage:hover {
-    background-color: #151515;
-    color: #fff;
+#unequipMessage {
+    font-size: 10px;
+    width: 20px;
+    height: 10px;
 }
-
-button:hover {
-    background-color: #151515;
-    color: #fff;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
-}
-
-#contenedorDatos {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 0.25rem;
-}
-
-#contenedorEstadisticas {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 0.25rem;
-}
-
-#contenedorObjetosEquipados {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 0.25rem;
-}
-
-#contenedorInventario {
-    margin-top: 2rem;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 0.25rem;
-}
-
-#contenedorObjetos {
-    margin-bottom: 2rem;
-}
-
 
 @media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        align-items: center;
+    flex-direction: column;
+    align-items: center;
     }
-
     nav ul li {
-        margin: 1rem 0;
+    margin: 1rem 0;
     }
 }
