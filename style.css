@@ -102,6 +102,7 @@ section > div {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    height: 272px;
     max-width: 350px;;
 }
 #objectsContainer > div {
@@ -169,7 +170,7 @@ button {
     height: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 350px) {
     nav ul {
     flex-direction: column;
     align-items: center;
