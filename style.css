@@ -68,7 +68,6 @@ section > div {
 #inventoryContainer {
     font-size: 13px;
     flex: 0 0 opx;
-    margin: 10px;
     padding: 10px;
     max-width: 95px;
     height: 272px;
@@ -86,7 +85,6 @@ section > div {
 #equippedObjectContainer {
     font-size: 13px;
     flex: 0 0 opx;
-    margin: 10px;
     padding: 10px;
     max-width: 95px;
     height: 272px;
@@ -118,7 +116,12 @@ section > div {
 }
 
 #buttonsContainter{
-    max-width: 90px;
+    font-size: 13px;
+    flex: 0 0 opx;
+    padding: 10px;
+    max-width: 95px;
+    height: 272px;
+    border: 1px solid #ccc;
 }
 button {
     color: black;
